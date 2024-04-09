@@ -42,7 +42,7 @@ export default function Home() {
       <div>
         <h1 className="text-3xl font-bold">Hello<span className="font-thin">, pikushe 👋🏻</span></h1>
       </div>
-      <div className="flex flex-row gap-4 w-full md:w-3/4">
+      <div className="flex flex-row gap-1 md:gap-4 w-full md:w-3/4">
         <Card>
           <div className="p-4 bg-[#3a3b64] rounded-full">
             <RiTruckLine size={35} color="#7367f0" />
