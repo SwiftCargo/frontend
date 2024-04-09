@@ -9,6 +9,7 @@ import { cn } from "@/lib/utils";
 
 const poppins = Poppins({ subsets: ["latin"], weight: ['300', '400', '500', '600', '700'] });
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -25,13 +26,4 @@ export default function RootLayout({
       </body>
     </html>
   );
-}
-
-export async function generateMetaData() {
-  return {
-    title: 'Swift Cargo',
-    openGraph: {
-      images: ['/swift.png'],
-    },
-  }
 }
