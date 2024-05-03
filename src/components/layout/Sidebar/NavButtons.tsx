@@ -1,5 +1,5 @@
 import { cn } from '@/lib/utils';
-import { RiHomeLine, RiNewsLine, RiCalendarEventLine, RiTruckLine, RiBarChartLine, RiGroupLine, RiArrowDropDownLine, RiArrowDropUpLine, RiZzzLine } from '@remixicon/react';
+import { RiHomeLine, RiNewsLine, RiCalendarEventLine, RiTruckLine, RiBarChartLine, RiGroupLine, RiArrowDropDownLine, RiArrowDropUpLine, RiZzzLine, RiDownload2Line } from '@remixicon/react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
@@ -66,7 +66,11 @@ export default function NavButtons(props: Props) {
                 <RiGroupLine size={20} />
                 <label>Members</label>
             </Link>
-            <Link href={'/loa'} className={cn("flex flex-row w-full gap-3 bg-transparent font-thin hover:bg-primary-600 py-4 px-2 rounded-lg items-center transition-all", router === '/members' ? 'bg-primary-800' : 'bg-transparent')}>
+            <Link href={'/download'} className={cn("flex flex-row w-full gap-3 bg-transparent font-thin hover:bg-primary-600 py-4 px-2 rounded-lg items-center transition-all", router === '/download' ? 'bg-primary-800' : 'bg-transparent')}>
+                <RiDownload2Line size={20} />
+                <label>Download</label>
+            </Link>
+            <Link href={'/loa'} className={cn("flex flex-row w-full gap-3 bg-transparent font-thin hover:bg-primary-600 py-4 px-2 rounded-lg items-center transition-all", router === '/loa' ? 'bg-primary-800' : 'bg-transparent')}>
                 <RiZzzLine size={20} />
                 <label>LOA</label>
             </Link>
