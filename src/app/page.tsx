@@ -6,6 +6,7 @@ import Chart from "@/components/views/Home/Chart";
 import { RiTruckLine, RiPinDistanceLine, RiMoneyEuroCircleLine } from '@remixicon/react';
 import Image from "next/image";
 import HomeCarousel from "@/components/views/Home/Carousel";
+import PageHead from "@/components/views/PageHead";
 export default function Home() {
   const DistanceData = {
     labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
@@ -41,13 +42,11 @@ export default function Home() {
     ]
   };
   return (
-    <div className="flex flex-col gap-4 justify-between md:py-6 md:pr-6 w-full">
-      <div className="flex flex-row gap-2 ">
+    <div className="flex flex-col gap-3.5 justify-between md:py-6 md:pr-6 w-full h-full">
+      <div className="flex flex-row gap-2">
         <div className="flex flex-col md:flex-row gap-2 w-full">
-          <div className="flex flex-col gap-4">
-            <div>
-              <h1 className="text-3xl font-bold">Hello<span className="font-thin">, pikushe 👋🏻</span></h1>
-            </div>
+          <div className="flex flex-col">
+            <PageHead>Hello<span className="font-thin">, pikushe 👋🏻</span></PageHead>
             <div className="flex flex-row gap-1.5 justify-between w-full">
               <InformationCard>
                 <div className="p-4 bg-[#3a3b64] rounded-full">
@@ -125,106 +124,7 @@ export default function Home() {
                 </tr>
               </thead>
               <tbody>
-                <tr className=" border-b bg-surface-700 border-gray-700 hover:bg-surface-600">
-                  <th scope="row" className="px-6 py-4 font-medium whitespace-nowrap text-white">
-                    42123
-                  </th>
-                  <td className="px-6 py-4">
-                    Car
-                  </td>
-                  <td className="px-6 py-4">
-                    10/04/2024
-                  </td>
-                  <td className="px-6 py-4">
-                    Calais
-                  </td>
-                  <td className="px-6 py-4">
-                    €2999
-                  </td>
-                  <td className="px-6 py-4 text-right">
-                    <a href="#" className="font-medium text-primary-500 hover:underline">View</a>
-                  </td>
-                </tr>
-                <tr className=" border-b bg-surface-700 border-gray-700 hover:bg-surface-600">
-                  <th scope="row" className="px-6 py-4 font-medium whitespace-nowrap text-white">
-                    42034
-                  </th>
-                  <td className="px-6 py-4">
-                    Oil
-                  </td>
-                  <td className="px-6 py-4">
-                    15/03/2024
-                  </td>
-                  <td className="px-6 py-4">
-                    Calais
-                  </td>
-                  <td className="px-6 py-4">
-                    €2999
-                  </td>
-                  <td className="px-6 py-4 text-right">
-                    <a href="#" className="font-medium text-primary-500 hover:underline">View</a>
-                  </td>
-                </tr>
-                <tr className=" border-b border-gray-700 bg-surface-700 hover:bg-surface-600">
-                  <th scope="row" className="px-6 py-4 font-medium whitespace-nowrap text-white">
-                    41500
-                  </th>
-                  <td className="px-6 py-4">
-                    Oil
-                  </td>
-                  <td className="px-6 py-4">
-                    15/03/2024
-                  </td>
-                  <td className="px-6 py-4">
-                    Calais
-                  </td>
-                  <td className="px-6 py-4">
-                    €2999
-                  </td>
-                  <td className="px-6 py-4 text-right">
-                    <a href="#" className="font-medium text-primary-500 hover:underline">View</a>
-                  </td>
-                </tr>
-                <tr className=" border-b border-gray-700 bg-surface-700 hover:bg-surface-600">
-                  <th scope="row" className="px-6 py-4 font-medium whitespace-nowrap text-white">
-                    41494
-                  </th>
-                  <td className="px-6 py-4">
-                    Oil
-                  </td>
-                  <td className="px-6 py-4">
-                    14/03/2024
-                  </td>
-                  <td className="px-6 py-4">
-                    Calais
-                  </td>
-                  <td className="px-6 py-4">
-                    €2999
-                  </td>
-                  <td className="px-6 py-4 text-right">
-                    <a href="#" className="font-medium text-primary-500 hover:underline">View</a>
-                  </td>
-                </tr>
-                <tr className=" bg-surface-700 hover:bg-surface-600">
-                  <th scope="row" className="px-6 py-4 font-medium whitespace-nowrap text-white">
-                    41450
-                  </th>
-                  <td className="px-6 py-4">
-                    Train
-                  </td>
-                  <td className="px-6 py-4">
-                    12/03/2024
-                  </td>
-                  <td className="px-6 py-4">
-                    Calais
-                  </td>
-                  <td className="px-6 py-4">
-                    €2999
-                  </td>
-                  <td className="px-6 py-4 text-right">
-                    <a href="#" className="font-medium text-primary-500 hover:underline">View</a>
-                  </td>
-                </tr>
+                
               </tbody>
             </table>
           </div>
