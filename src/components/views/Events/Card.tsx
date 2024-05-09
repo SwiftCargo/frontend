@@ -20,7 +20,7 @@ interface Props {
 export default function EventsCard({ image, title, date, location, destination, meetupTime, departureTime, link }: Props) {
     const [isHovered, setIsHovered] = React.useState(false);
     return (
-        <div className="relative flex flex-col gap-2 bg-surface-700 rounded-lg transition-all"
+        <div className="relative flex flex-col gap-2 bg-surface-700 rounded-lg"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}>
             <div>
@@ -28,9 +28,9 @@ export default function EventsCard({ image, title, date, location, destination, 
                     <Image src={image ? image : Route} alt="..." width={450} height={300} className="rounded-t-xl w-full" />
                     {
                         isHovered && (
-                            <Link href={link ? link : "https://truckersmp.com/vtc/71075"} className="cursor-pointer absolute inset-0 flex gap-1 items-center rounded-lg justify-center bg-black bg-opacity-50 text-white text-2xl font-semibold transition-opacity duration-300 opacity-0 hover:opacity-100">
+                            <Link href={link ? link : "https://truckersmp.com/vtc/71075"} className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-80 text-white text-lg font-semibold transition-opacity duration-500 opacity-0 hover:opacity-100 rounded-lg">
                                 <RiExternalLinkLine size={45} className="text-surface-300" />
-                                <span className="font-semibold">Review</span>
+                                <span>Review</span>
                             </Link>
                         )
                     }
