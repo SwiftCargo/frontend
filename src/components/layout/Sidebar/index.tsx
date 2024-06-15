@@ -1,3 +1,5 @@
+'use client';
+
 import { RiMenu3Line, RiCloseLargeLine } from "@remixicon/react";
 import Account from "./Account";
 import Head from "./Head";
