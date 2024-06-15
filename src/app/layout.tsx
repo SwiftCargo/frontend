@@ -1,8 +1,5 @@
-"use client";
-
 import type { Metadata, Viewport  } from "next";
 import { Poppins, DM_Sans } from "next/font/google";
-import { usePathname } from 'next/navigation';
 import "./globals.css";
 import Header from "@/components/layout/Sidebar";
 import Footer from "@/components/layout/Footer";
@@ -24,13 +21,10 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const router = usePathname();
-
-  const isLoginPage = router === '/login';
   return (
     <html lang="en">
-      <body className={cn("bg-surface-900 flex flex-col md:flex-row  gap-2 md:gap-[15px]", poppins.className, isLoginPage ? 'p-0' : 'p-1 md:p-1.5')}>
-        {!isLoginPage && <Header />}
+      <body className={cn("bg-surface-900 flex flex-col md:flex-row  gap-2 md:gap-[15px]", poppins.className)}>
+        <Header />
         {children}
       </body>
     </html>
