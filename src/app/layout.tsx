@@ -11,8 +11,19 @@ export const metadata: Metadata = {
   title: "Swift Cargo",
   description: "Swift cargo was founded on 6 April 2024, our main job is realistics trucking and create good community",
   openGraph: {
-    url: 'https://static.truckersmp.com/images/vtc/cover/swift-cargo.1718460788.jpg'
-  }
+            type: 'website',
+            title: 'Swift Cargo',
+            description: 'Swift cargo was founded on 6 April 2024, our main job is realistics trucking and create good community',
+            siteName: 'Swift Cargo',
+            images: [
+                {
+                    hostname: 'https://static.truckersmp.com',
+                    url: '/images/vtc/cover/swift-cargo.1718460788.jpg',
+                    width: 1523,
+                    height: 278,
+                }
+            ]
+  },
 };
 
 export const viewport: Viewport = {
